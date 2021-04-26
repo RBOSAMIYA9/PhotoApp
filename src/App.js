@@ -5,7 +5,7 @@ import Modal from './components/Modal'
 import styled from "styled-components";
 import { CgSun } from "react-icons/cg";
 import { HiMoon } from "react-icons/hi";
-import { createGlobalStyle } from 'styled-components'
+
 import { ThemeProvider } from "styled-components";
 
 const LightTheme = {
@@ -32,7 +32,7 @@ function App() {
 
   const [selectedImg, setSelectedImg] = useState(null);
   const [theme, setTheme] = useState("light")
-  var value = themes[theme].color;
+ 
   console.log("theme", themes[theme].color);
   function changeTheme() {
     if (theme === "light") {

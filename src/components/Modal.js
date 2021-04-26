@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React  from 'react';
 import { motion } from 'framer-motion';
-import { projectStorage, projectFirestore,timestamp } from '../firebaseConfig';
+import { projectFirestore } from '../firebaseConfig';
 
 const Modal = ({ setSelectedImg, selectedImg, docId }) => {
   console.log("setSelectedImg",setSelectedImg);
